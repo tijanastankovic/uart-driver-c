@@ -65,7 +65,7 @@ Bit Manipulation
 
 Bit masks are used to configure and check register values.
 
-``` #define UART_ENABLE (1 << 0) ```
+Example: ``` #define UART_ENABLE (1 << 0) ```
 
 ## Example Flow
 
