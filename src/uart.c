@@ -14,3 +14,12 @@ void uart_send_char(char c)
   UART_DR = c;
 }
 
+char uart_recieve_char()
+{
+  while (!(UART_SR & UART_RX_READY)) 
+    {
+      // wait
+    }
+  
+  return (char) UART_DR;
+}
