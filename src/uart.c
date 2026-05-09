@@ -23,3 +23,12 @@ char uart_recieve_char()
   
   return (char) UART_DR;
 }
+
+void uart_send_string(const char* str)
+{
+  while (*str != '\0') 
+    {
+      uart_send_char(*str);
+      str++;
+    }
+}
